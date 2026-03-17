@@ -1,16 +1,111 @@
-# React + Vite
+# 🚑 Rescue AI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple disaster response web app I built during a hackathon to help users react quickly in emergency situations.
 
-Currently, two official plugins are available:
+The idea is to combine quick emergency actions, location awareness, voice input, and an AI chat assistant — all in one place.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧠 What it does
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+* Lets users trigger emergency actions like:
 
-## Expanding the ESLint configuration
+  * SOS
+  * Medical emergency
+  * Fire emergency
+  * Flood emergency
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+* Shows a live map (using Leaflet) so users can see their location
+
+* Includes a chat box where users can describe their situation and get AI responses
+
+* Has a voice input feature so users can speak instead of typing
+
+---
+
+## ⚙️ How it works
+
+* Frontend built with React (Vite)
+* Backend built with Node.js + Express
+* Chat messages are sent to the backend and processed there
+* Map is handled using Leaflet
+* Voice input uses the browser’s Speech Recognition API
+
+---
+
+## 🚀 Running the project
+
+Clone the repo:
+
+```bash
+git clone https://github.com/arohandutta/rescue-ai.git
+cd rescue-ai
+```
+
+Install frontend:
+
+```bash
+npm install
+```
+
+Install backend:
+
+```bash
+cd backend
+npm install
+```
+
+Run backend:
+
+```bash
+node server.cjs
+```
+
+Run frontend:
+
+```bash
+npm run dev
+```
+
+Open:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📸 Screenshots
+
+Screenshots drive link:
+https://drive.google.com/drive/folders/1QTIpZ_bAAJz3-j2W5thnYocBsnVFsICx?usp=drive_link
+
+
+
+## 🎥 Demo
+
+demo video drive link:
+https://drive.google.com/file/d/11uhU3gb4pEOaO3vLA6NlyDTWaRQO1TcA/view?usp=sharing
+
+
+
+## 🤔 Why I built this
+
+During disasters, people often panic and don’t know what to do first.
+I wanted to create something simple that gives quick actions + guidance in one place.
+
+
+
+## 🔧 Things I’d improve
+
+* Add real emergency service integration (ambulance, police, etc.)
+* Make the voice assistant respond back (text-to-speech)
+* Improve UI design (right now it’s basic)
+* Make it mobile-friendly
+
+
+## 👨‍💻 Author
+
+Arohan Dutta
+https://github.com/arohandutta
+
